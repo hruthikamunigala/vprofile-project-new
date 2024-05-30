@@ -29,12 +29,12 @@ pipeline {
                 }
             }
         }
-        stage('TEST'){
+        stage('Test'){
             steps {
                 sh 'mvn test'
             }
         }
-        stage ('Checkstyle Analysis') {
+        stage('Checkstyle Analysis'){
             step {
                 sh 'mvn checkstyle:checkstyle'
             }
